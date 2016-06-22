@@ -116,7 +116,7 @@ function respond() {
   }
        else if(request.text && botbbc.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/2qbeSYt.jpg");
+    postMessage("https://www.colourbox.com/preview/5522898-black-rooster-on-a-white-background.jpg");
     this.res.end();
   }
             else if(request.text && botajlee.test(request.text)) {

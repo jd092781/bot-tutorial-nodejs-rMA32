@@ -74,11 +74,11 @@ function respond() {
     postMessage("http://www.mofleagues.com/coaches.htm");
     this.res.end();
   } 
-    else if(request.text && botlist.test(request.text)) {
+      else if(request.text && botlist.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://cdn.meme.am/instances/72156863.jpg");
     this.res.end();
-  } 
+  }
   else if(request.text && botODB.test(request.text)) {
     this.res.writeHead(200);
     postMessage("OBJ*");

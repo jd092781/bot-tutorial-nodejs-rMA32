@@ -136,8 +136,7 @@ function respond() {
   }
               else if(request.text && botaaron.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://s-media-cache-ak0.pinimg.com/736x/b1/d0/6a/b1d06ac9a89ff1974b90ad050f652e3d.jpg
-");
+    postMessage("https://s-media-cache-ak0.pinimg.com/736x/b1/d0/6a/b1d06ac9a89ff1974b90ad050f652e3d.jpg");
     this.res.end();
   }
             else if(request.text && botForum.test(request.text)) {

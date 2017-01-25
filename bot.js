@@ -161,17 +161,17 @@ function respond() {
   }
                 else if(request.text && botStandings.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://mofleagues.com/standings.htm");
+    postMessage("http://daddyleagues.com/MOF/standings");
     this.res.end();
   }
                 else if(request.text && botSchedule.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://mofleagues.com/schedule.htm");
+    postMessage("http://daddyleagues.com/MOF/schedules");
     this.res.end();
   }
                 else if(request.text && botstats.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://mofleagues.com/stats.htm");
+    postMessage("http://daddyleagues.com/MOF/stats/player");
     this.res.end();
   }
               else if(request.text && botWebsite.test(request.text)) {

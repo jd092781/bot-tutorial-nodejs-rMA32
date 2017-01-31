@@ -146,7 +146,7 @@ function respond() {
   }
                 else if(request.text && botStandings.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://mofleagues.com/standings.htm");
+    postMessage("http://daddyleagues.com/MOF/standings");
     this.res.end();
   }
                 else if(request.text && botSchedule.test(request.text)) {

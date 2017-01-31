@@ -5,9 +5,9 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/;
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/; botRegexSC = /^\/SDL/i; botDuck = /^\/duck/;
-      botRegexGTA = /^\/GTA/; botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botaaron = /^\/aaron/; botlist = /^\/list/; botstats = /^\/stats/; botstallone = /^\/thankyoustallone/; botfrancesa = /^\/francesa/; botbbc = /^\/bbc/; botPAWG = /^\/PAWG/; botajlee = /^\/ajlee/; botDbag = /^\/douchebagjar/; botRecords = /^\/records/; botStandings = /^\/standings/; botSchedule = /^\/schedule/; botWebsite = /^\/website/; botForum = /^\/forum/; botSavage = /^\/savage/; botRegexSh = /^\/shrug/; botGoat = /^\/goat/; botCat = /^\/paws/; botJew = /^\/jewboy/; botRegexWk = /^\/users/; botcuppahaters = /^\/cuppahaters/; botcmpunk = /^\/cmpunk/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botaaron = /^\/aaron/; botlist = /^\/list/; botstats = /^\/stats/; botstallone = /^\/thankyoustallone/; botfrancesa = /^\/francesa/; botbbc = /^\/bbc/; botPAWG = /^\/PAWG/; botajlee = /^\/ajlee/; botDbag = /^\/douchebagjar/; botRecords = /^\/records/; botStandings = /^\/standings/; botSchedule = /^\/schedule/; botWebsite = /^\/website/; botForum = /^\/forum/; botSavage = /^\/savage/; botRegexSh = /^\/shrug/; botGoat = /^\/goat/; botCat = /^\/paws/; botJew = /^\/jewboy/; botRegexWk = /^\/users/; botcuppahaters = /^\/cuppahaters/; botcmpunk = /^\/cmpunk/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -19,11 +19,6 @@ function respond() {
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/mof/team/"+request.text.substring(5,8)+"/depthchart");
-    this.res.end();
-  } 
-   else if(request.text && botRegexGTA.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.igta5.com/images/official-artwork-trevor-yellow-jack-inn.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -39,6 +34,11 @@ function respond() {
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.mofleagues.com/rules.htm");
+    this.res.end();
+  } 
+  else if(request.text && botRegexGTA.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
@@ -161,17 +161,17 @@ function respond() {
   }
                 else if(request.text && botStandings.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/MOF/standings");
+    postMessage("http://mofleagues.com/standings.htm");
     this.res.end();
   }
                 else if(request.text && botSchedule.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/MOF/schedules");
+    postMessage("http://mofleagues.com/schedule.htm");
     this.res.end();
   }
                 else if(request.text && botstats.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/MOF/stats/player");
+    postMessage("http://mofleagues.com/stats.htm");
     this.res.end();
   }
               else if(request.text && botWebsite.test(request.text)) {

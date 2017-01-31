@@ -5,7 +5,9 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/; botRegexDL = /^\/DDL/i; botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/; botRegexAd=/^\/advance/; botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/; botRegexP = /^\/PDL/i; botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botlist = /^\/list/; botstallone = /^\/thankyoustallone/; botfrancesa = /^\/francesa/; botbbc = /^\/bbc/; botPAWG = /^\/PAWG/; botajlee = /^\/ajlee/; botDbag = /^\/douchebagjar/; botRecords = /^\/records/; botWebsite = /^\/website/; botForum = /^\/forum/; botSavage = /^\/savage/; botRegexSh = /^\/shrug/; botGoat = /^\/goat/; botCat = /^\/paws/; botJew = /^\/jewboy/; botRegexWk = /^\/users/; botcuppahaters = /^\/cuppahaters/; botcmpunk = /^\/cmpunk/; botaaron = /^\/aaron/;
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botlist = /^\/list/; botstats = /^\/stats/; botstallone = /^\/thankyoustallone/; botfrancesa = /^\/francesa/; botbbc = /^\/bbc/; botPAWG = /^\/PAWG/; botajlee = /^\/ajlee/; botDbag = /^\/douchebagjar/; botRecords = /^\/records/; botStandings = /^\/standings/; botSchedule = /^\/schedule/; botWebsite = /^\/website/; botForum = /^\/forum/; botSavage = /^\/savage/; botRegexSh = /^\/shrug/; botGoat = /^\/goat/; botCat = /^\/paws/; botJew = /^\/jewboy/; botRegexWk = /^\/users/; botaaron = /^\/aaron/; botcmpunk = /^\/cmpunk/; botcuppahaters = /^\/cuppahaters/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -142,6 +144,21 @@ function respond() {
     postMessage("http://mofleagues.com/history/records.htm");
     this.res.end();
   }
+                else if(request.text && botStandings.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://mofleagues.com/standings.htm");
+    this.res.end();
+  }
+                else if(request.text && botSchedule.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://mofleagues.com/schedule.htm");
+    this.res.end();
+  }
+                else if(request.text && botstats.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://mofleagues.com/stats.htm");
+    this.res.end();
+  }
               else if(request.text && botWebsite.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://mofleagues.com");
@@ -152,19 +169,19 @@ function respond() {
     postMessage("https://i.imgflip.com/y8t1r.jpg");
     this.res.end();
   }
-                  else if(request.text && botcmpunk.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://s2.quickmeme.com/img/9c/9cb99372b9137f833e3d27214e001d0863c6b291ca6b67bee1878f3fe89608cd.jpg");
-    this.res.end();
-  }
-                    else if(request.text && botaaron.test(request.text)) {
+                else if(request.text && botaaron.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://s-media-cache-ak0.pinimg.com/736x/b1/d0/6a/b1d06ac9a89ff1974b90ad050f652e3d.jpg");
     this.res.end();
   }
-                else if(request.text && botcupphaters.test(request.text)) {
+                else if(request.text && botcuppahaters.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://pbs.twimg.com/media/ClXh-B2XIAAfH2-.jpg");
+    this.res.end();
+  }
+                 else if(request.text && botcmpunk.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://s2.quickmeme.com/img/9c/9cb99372b9137f833e3d27214e001d0863c6b291ca6b67bee1878f3fe89608cd.jpg");
     this.res.end();
   }
   else {

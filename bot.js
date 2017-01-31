@@ -21,6 +21,11 @@ function respond() {
     postMessage("http://daddyleagues.com/mof/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
+   else if(request.text && botRegexGTA.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.igta5.com/images/official-artwork-trevor-yellow-jack-inn.jpg");
+    this.res.end();
+  } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.imgur.com/B5BSVqH.png");

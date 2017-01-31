@@ -186,7 +186,7 @@ function respond() {
   }
                    else if(request.text && botbetts.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/dTlrG7Q.jpg");
+    postMessage("http://hw.infowars.com/wp-content/uploads/2016/11/trump-win1laugh.jpg");
     this.res.end();
   }
   else {

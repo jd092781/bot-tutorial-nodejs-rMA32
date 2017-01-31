@@ -142,21 +142,6 @@ function respond() {
     postMessage("http://mofleagues.com/history/records.htm");
     this.res.end();
   }
-                else if(request.text && botStandings.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/MOF/standings");
-    this.res.end();
-  }
-                else if(request.text && botSchedule.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/MOF/schedules");
-    this.res.end();
-  }
-                else if(request.text && botstats.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/MOF/stats/player");
-    this.res.end();
-  }
               else if(request.text && botWebsite.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://mofleagues.com");
@@ -180,6 +165,21 @@ function respond() {
                 else if(request.text && botcupphaters.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://pbs.twimg.com/media/ClXh-B2XIAAfH2-.jpg");
+    this.res.end();
+  }
+                  else if(request.text && botStandings.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/MOF/standings");
+    this.res.end();
+  }
+                else if(request.text && botSchedule.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/MOF/schedules");
+    this.res.end();
+  }
+                else if(request.text && botstats.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://daddyleagues.com/MOF/stats/player");
     this.res.end();
   }
   else {

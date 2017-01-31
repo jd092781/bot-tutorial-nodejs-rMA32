@@ -36,11 +36,6 @@ function respond() {
     postMessage("http://www.mofleagues.com/rules.htm");
     this.res.end();
   } 
-  else if(request.text && botRegexGTA.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
-    this.res.end();
-  } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/mof/team/"+request.text.substring(5,8)+"/schedule");

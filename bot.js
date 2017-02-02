@@ -174,7 +174,7 @@ function respond() {
     postMessage("http://www.mofleagues.com/complaint.htm");
     this.res.end();
   }
-                      else if(request.text && bottradetally.test(request.text)) {
+                    else if(request.text && bottradetally.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://docs.google.com/spreadsheets/d/1pzxMp0QQuujY8JOX3evRVLr6O2SR9fhlnKgxrqMQumI/pubhtml");
     this.res.end();

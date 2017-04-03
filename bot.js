@@ -196,7 +196,7 @@ function respond() {
   }
                   else if(request.text && botalex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.docdreyfus.com/psychologically-speaking/wp-content/uploads/2014/09/M_Id_123282_abuse.jpg");
+    postMessage("http://i.dailymail.co.uk/i/pix/2010/09/09/article-1310349-0060142800000258-687_468x286.jpg");
     this.res.end();
   }
                 else if(request.text && botcuppahaters.test(request.text)) {

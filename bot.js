@@ -211,7 +211,7 @@ function respond() {
   }
                       else if(request.text && botgort.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://s-media-cache-ak0.pinimg.com/236x/4a/05/af/4a05af9a54ee42ba009ce9809371b772.jpg");
+    postMessage("http://orig01.deviantart.net/8155/f/2010/172/0/4/gort_by_markus_weldon.gif");
     this.res.end();
   }
                 else if(request.text && botcuppahaters.test(request.text)) {

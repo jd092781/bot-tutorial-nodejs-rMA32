@@ -38,7 +38,7 @@ function respond() {
   } 
     else if(request.text && botbettskid.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/426x240.gif.d9a852095e3c41b8b54b8fd8d3b336a7");
+    postMessage("https://s-media-cache-ak0.pinimg.com/originals/be/a0/4b/bea04b80091c3ef4992771a0153e7334.gif");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {

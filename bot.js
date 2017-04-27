@@ -209,7 +209,7 @@ function respond() {
     postMessage("https://media.giphy.com/media/3o7qDSOvfaCO9b3MlO/giphy.gif");
     this.res.end();
   }
-                      else if(request.text && botthankyougort.test(request.text)) {
+                      else if(request.text && botgort.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://s-media-cache-ak0.pinimg.com/236x/4a/05/af/4a05af9a54ee42ba009ce9809371b772.jpg");
     this.res.end();

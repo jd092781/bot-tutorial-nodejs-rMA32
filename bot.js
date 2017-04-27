@@ -241,7 +241,7 @@ function respond() {
   }
                      else if(request.text && botkideyebrows.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/480x246.gif.ec070fa408744a3baee82da331dd2524.large");
+    postMessage("https://img.buzzfeed.com/buzzfeed-static/static/2016-06/27/14/asset/buzzfeed-prod-fastlane02/anigif_sub-buzz-29551-1467053907-2.gif");
     this.res.end();
   }
                    else if(request.text && botsob.test(request.text)) {

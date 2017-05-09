@@ -121,7 +121,7 @@ function respond() {
   }
        else if(request.text && botbeast.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.ytimg.com/vi/i0kLlAGNsao/maxresdefault.jpg");
+    postMessage("https://cdn.meme.am/cache/instances/folder747/17373747.jpg");
     this.res.end();
   }
        else if(request.text && botfrancesa.test(request.text)) {

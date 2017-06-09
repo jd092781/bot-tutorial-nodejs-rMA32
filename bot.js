@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexYt = /^\/youtube/i; botRegexSb = /^\/sub/; botlist = /^\/list/; botstats = /^\/stats/; botstallone = /^\/thankyoustallone/; botfrancesa = /^\/francesa/; botbbc = /^\/bbc/; botPAWG = /^\/PAWG/; botajlee = /^\/ajlee/; botDbag = /^\/douchebagjar/; botRecords = /^\/records/; botStandings = /^\/standings/; botSchedule = /^\/schedule/; botWebsite = /^\/website/; botSavage = /^\/savage/; botRegexSh = /^\/shrug/; botGoat = /^\/goat/; botCat = /^\/paws/; botJew = /^\/jewboy/; botRegexWk = /^\/users/; botaaron = /^\/aaron/; botcmpunk = /^\/cmpunk/; botcuppahaters = /^\/cuppahaters/; botbetts = /^\/betts/; botcomplaint = /^\/complaint/; bottradeproposal = /^\/tradeproposal/; botpositionchange = /^\/positionchange/; bottradetally = /^\/tradetally/; botsob = /^\/sob/; botbroadcast = /^\/broadcast/; botalex = /^\/alex/; bottrophy = /^\/trophy/; botcommish = /^\/commish/; botgort = /^\/gort/; botshit = /^\/shit/; botseeya = /^\/seeya/; botbettskid = /^\/bettskid/; botkideyebrows = /^\/kideyebrows/; botfreewin = /^\/freewin/; botjonesy = /^\/jonesy/; botjfon = /^\/jfon/; botjewcat = /^\/jewcat/; botbeast = /^\/beast/; botslideupinmydm = /^\/slideupinmydm/; botdonttagme = /^\/donttagme/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexYt = /^\/youtube/i; botRegexSb = /^\/sub/; botlist = /^\/list/; botstats = /^\/stats/; botstallone = /^\/thankyoustallone/; botfrancesa = /^\/francesa/; botbbc = /^\/bbc/; botPAWG = /^\/PAWG/; botajlee = /^\/ajlee/; botDbag = /^\/douchebagjar/; botRecords = /^\/records/; botStandings = /^\/standings/; botSchedule = /^\/schedule/; botWebsite = /^\/website/; botSavage = /^\/savage/; botRegexSh = /^\/shrug/; botGoat = /^\/goat/; botCat = /^\/paws/; botJew = /^\/jewboy/; botRegexWk = /^\/users/; botaaron = /^\/aaron/; botcmpunk = /^\/cmpunk/; botcuppahaters = /^\/cuppahaters/; botbetts = /^\/betts/; botcomplaint = /^\/complaint/; bottradeproposal = /^\/tradeproposal/; botpositionchange = /^\/positionchange/; bottradetally = /^\/tradetally/; botsob = /^\/sob/; botbroadcast = /^\/broadcast/; botalex = /^\/alex/; bottrophy = /^\/trophy/; botcommish = /^\/commish/; botgort = /^\/gort/; botshit = /^\/shit/; botseeya = /^\/seeya/; botbettskid = /^\/bettskid/; botkideyebrows = /^\/kideyebrows/; botfreewin = /^\/freewin/; botjonesy = /^\/jonesy/; botjfon = /^\/jfon/; botjewcat = /^\/jewcat/; botbeast = /^\/beast/; botslideupinmydm = /^\/slideupinmydm/; botdonttagme = /^\/donttagme/; botthelist = /^\/thelist/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -109,9 +109,14 @@ function respond() {
     postMessage("https://s-media-cache-ak0.pinimg.com/736x/d7/0d/dd/d70ddd3374982302f9657869901a1931.jpg");
     this.res.end();
   }
+        else if(request.text && botthelist.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://media.tenor.com/images/3752c97d28886d766aaa03462c46a026/tenor.gif");
+    this.res.end();
+  }
         else if(request.text && botGoat.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://media4.popsugar-assets.com/files/2012/08/33/4/192/1922398/0ec8ac79215b9c3f_4/i/Tom-Brady-Looks-Hot-Poses-Dog-VMAN-Magazine-Shot-Mario-Testino.jpg");
+    postMessage("https://s-media-cache-ak0.pinimg.com/736x/09/a6/29/09a62908e1cedec3c7601a984107ac19.jpg");
     this.res.end();
   }
           else if(request.text && botSavage.test(request.text)) {

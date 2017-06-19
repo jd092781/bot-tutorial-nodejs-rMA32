@@ -136,7 +136,7 @@ function respond() {
   }
        else if(request.text && botbeast.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.ytimg.com/vi/RjYTUrdDREk/maxresdefault.jpg");
+    postMessage("https://i.makeagif.com/media/5-10-2016/z9T3Hg.gif");
     this.res.end();
   }
        else if(request.text && botfrancesa.test(request.text)) {

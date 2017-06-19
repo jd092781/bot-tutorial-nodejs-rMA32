@@ -136,7 +136,7 @@ function respond() {
   }
        else if(request.text && botbeast.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://vignette3.wikia.nocookie.net/uncyclopedia/images/8/85/NintendoNerdLord.jpg");
+    postMessage("https://i.ytimg.com/vi/RjYTUrdDREk/maxresdefault.jpg");
     this.res.end();
   }
        else if(request.text && botfrancesa.test(request.text)) {

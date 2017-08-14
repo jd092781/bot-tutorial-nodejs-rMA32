@@ -141,7 +141,7 @@ function respond() {
   }
           else if(request.text && botSavage.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.imgur.com/4tryEIe.jpg");
+    postMessage("https://s-media-cache-ak0.pinimg.com/564x/53/5a/43/535a433d5cdbec3ee067e08966389e14.jpg");
     this.res.end();
   }            
      else if(request.text && botPAWG.test(request.text)) {

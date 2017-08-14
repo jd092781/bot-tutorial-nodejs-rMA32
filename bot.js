@@ -141,7 +141,7 @@ function respond() {
   }
           else if(request.text && botSavage.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i479.photobucket.com/albums/rr160/fishbulb-suplex/Wrestlers/Randy%20Savage/The_Macho_Man_Randy_Savage_-_Ran-7.jpg");
+    postMessage("http://i.imgur.com/4tryEIe.jpg");
     this.res.end();
   }            
      else if(request.text && botPAWG.test(request.text)) {

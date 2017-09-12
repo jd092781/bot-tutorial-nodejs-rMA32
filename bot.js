@@ -241,7 +241,7 @@ function respond() {
   }
                     else if(request.text && bottradetally.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1foIJOHqOZve959PmJiqaNmDU00PLD0EnRBZSIPn5l3s/pubhtml");
+    postMessage("https://docs.google.com/spreadsheets/d/e/2PACX-1vQNgWZT6uzrfeXaH7-LJ75DIiSV8ucLCHvPIuNDQOVLe4uJleg8OZhjJbBBREoGAcB5modhtwz0Alsb/pubhtml");
     this.res.end();
   }
               else if(request.text && botWebsite.test(request.text)) {

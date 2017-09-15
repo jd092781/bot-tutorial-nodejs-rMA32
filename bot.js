@@ -306,7 +306,7 @@ function respond() {
   }
                    else if(request.text && botsob.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.giphy.com/media/K1OBjqTBOWwta/giphy.gif");
+    postMessage("https://i.groupme.com/700x394.gif.126b308484b34ce089cedfde1d4f476c");
     this.res.end();
   }
                      else if(request.text && botbroadcast.test(request.text)) {

@@ -306,7 +306,7 @@ function respond() {
   }
                    else if(request.text && botsob.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://img.pandawhale.com/post-55902-son-of-a-bitch-gif-Imgur-Tumbl-sOAG.gif");
+    postMessage("https://media.giphy.com/media/K1OBjqTBOWwta/giphy.gif");
     this.res.end();
   }
                      else if(request.text && botbroadcast.test(request.text)) {

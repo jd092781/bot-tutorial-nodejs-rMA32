@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexYt = /^\/youtube/i; botRegexSb = /^\/sub/; botlist = /^\/list/; botstats = /^\/stats/; botstallone = /^\/thankyoustallone/; botfrancesa = /^\/francesa/; botbbc = /^\/bbc/; botPAWG = /^\/PAWG/; botajlee = /^\/ajlee/; botDbag = /^\/douchebagjar/; botRecords = /^\/records/; botStandings = /^\/standings/; botSchedule = /^\/schedule/; botWebsite = /^\/website/; botSavage = /^\/savage/; botRegexSh = /^\/shrug/; botGoat = /^\/goat/; botCat = /^\/paws/; botJew = /^\/jewboy/; botRegexWk = /^\/users/; botaaron = /^\/aaron/; botcmpunk = /^\/cmpunk/; botcuppahaters = /^\/cuppahaters/; botbetts = /^\/betts/; botcomplaint = /^\/complaint/; bottradeproposal = /^\/tradeproposal/; botpositionchange = /^\/positionchange/; bottradetally = /^\/tradetally/; botsob = /^\/sob/; botbroadcast = /^\/broadcast/; botalex = /^\/alex/; bottrophy = /^\/trophy/; botcommish = /^\/commish/; botgort = /^\/gort/; botshit = /^\/shit/; botseeya = /^\/seeya/; botbettskid = /^\/bettskid/; botkideyebrows = /^\/kideyebrows/; botfreewin = /^\/freewin/; botjonesy = /^\/jonesy/; botjfon = /^\/jfon/; botjewcat = /^\/jewcat/; botbeast = /^\/beast/; botslideupinmydm = /^\/slideupinmydm/; botdonttagme = /^\/donttagme/; botthelist = /^\/thelist/; botpauly = /^\/pauly/; botdunk = /^\/dunk/; botmut = /^\/mut/; botpussy = /^\/pussy/; botmoran = /^\/moran/; botwindowpauly = /^\/windowpauly/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexYt = /^\/youtube/i; botRegexSb = /^\/sub/; botlist = /^\/list/; botstats = /^\/stats/; botstallone = /^\/thankyoustallone/; botfrancesa = /^\/francesa/; botbbc = /^\/bbc/; botPAWG = /^\/PAWG/; botajlee = /^\/ajlee/; botDbag = /^\/douchebagjar/; botRecords = /^\/records/; botStandings = /^\/standings/; botSchedule = /^\/schedule/; botWebsite = /^\/website/; botSavage = /^\/savage/; botRegexSh = /^\/shrug/; botGoat = /^\/goat/; botCat = /^\/paws/; botJew = /^\/jewboy/; botRegexWk = /^\/users/; botaaron = /^\/aaron/; botcmpunk = /^\/cmpunk/; botcuppahaters = /^\/cuppahaters/; botbetts = /^\/betts/; botcomplaint = /^\/complaint/; bottradeproposal = /^\/tradeproposal/; botpositionchange = /^\/positionchange/; bottradetally = /^\/tradetally/; botsob = /^\/sob/; botbroadcast = /^\/broadcast/; botalex = /^\/alex/; bottrophy = /^\/trophy/; botcommish = /^\/commish/; botgort = /^\/gort/; botshit = /^\/shit/; botseeya = /^\/seeya/; botbettskid = /^\/bettskid/; botkideyebrows = /^\/kideyebrows/; botfreewin = /^\/freewin/; botjonesy = /^\/jonesy/; botjfon = /^\/jfon/; botjewcat = /^\/jewcat/; botbeast = /^\/beast/; botslideupinmydm = /^\/slideupinmydm/; botdonttagme = /^\/donttagme/; botthelist = /^\/thelist/; botpauly = /^\/pauly/; botdunk = /^\/dunk/; botmut = /^\/mut/; botpussy = /^\/pussy/; botmoran = /^\/moran/; botwindowpauly = /^\/windowpauly/; botdolan = /^\/dolan/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -307,6 +307,11 @@ function respond() {
                    else if(request.text && botbetts.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://hw.infowars.com/wp-content/uploads/2016/11/trump-win1laugh.jpg");
+    this.res.end();
+  }
+                     else if(request.text && botdolan.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.mofleagues.com/pictures/dolan_christ.png");
     this.res.end();
   }
                      else if(request.text && botkideyebrows.test(request.text)) {

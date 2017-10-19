@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexYt = /^\/youtube/i; botRegexSb = /^\/sub/; botlist = /^\/list/; botstats = /^\/stats/; botstallone = /^\/thankyoustallone/; botfrancesa = /^\/francesa/; botbbc = /^\/bbc/; botPAWG = /^\/PAWG/; botajlee = /^\/ajlee/; botDbag = /^\/douchebagjar/; botRecords = /^\/records/; botStandings = /^\/standings/; botSchedule = /^\/schedule/; botWebsite = /^\/website/; botSavage = /^\/savage/; botRegexSh = /^\/shrug/; botGoat = /^\/goat/; botCat = /^\/paws/; botJew = /^\/jewboy/; botRegexWk = /^\/users/; botaaron = /^\/aaron/; botcmpunk = /^\/cmpunk/; botcuppahaters = /^\/cuppahaters/; botbetts = /^\/betts/; botcomplaint = /^\/complaint/; bottradeproposal = /^\/tradeproposal/; botpositionchange = /^\/positionchange/; bottradetally = /^\/tradetally/; botsob = /^\/sob/; botbroadcast = /^\/broadcast/; botalex = /^\/alex/; bottrophy = /^\/trophy/; botcommish = /^\/commish/; botgort = /^\/gort/; botshit = /^\/shit/; botseeya = /^\/seeya/; botbettskid = /^\/bettskid/; botkideyebrows = /^\/kideyebrows/; botfreewin = /^\/freewin/; botjonesy = /^\/jonesy/; botjfon = /^\/jfon/; botjewcat = /^\/jewcat/; botbeast = /^\/beast/; botslideupinmydm = /^\/slideupinmydm/; botdonttagme = /^\/donttagme/; botthelist = /^\/thelist/; botpauly = /^\/pauly/; botdunk = /^\/dunk/; botmut = /^\/mut/; botpussy = /^\/pussy/; botmoran = /^\/moran/; botwindowpauly = /^\/windowpauly/; botdolan = /^\/dolan/; botrosado = /^\/rosado/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexYt = /^\/youtube/i; botRegexSb = /^\/sub/; botlist = /^\/list/; botstats = /^\/stats/; botstallone = /^\/thankyoustallone/; botfrancesa = /^\/francesa/; botbbc = /^\/bbc/; botPAWG = /^\/PAWG/; botajlee = /^\/ajlee/; botDbag = /^\/douchebagjar/; botRecords = /^\/records/; botStandings = /^\/standings/; botSchedule = /^\/schedule/; botWebsite = /^\/website/; botSavage = /^\/savage/; botRegexSh = /^\/shrug/; botGoat = /^\/goat/; botCat = /^\/paws/; botJew = /^\/jewboy/; botRegexWk = /^\/users/; botaaron = /^\/aaron/; botcmpunk = /^\/cmpunk/; botcuppahaters = /^\/cuppahaters/; botbetts = /^\/betts/; botcomplaint = /^\/complaint/; bottradeproposal = /^\/tradeproposal/; botpositionchange = /^\/positionchange/; bottradetally = /^\/tradetally/; botsob = /^\/sob/; botbroadcast = /^\/broadcast/; botalex = /^\/alex/; bottrophy = /^\/trophy/; botcommish = /^\/commish/; botgort = /^\/gort/; botshit = /^\/shit/; botseeya = /^\/seeya/; botbettskid = /^\/bettskid/; botkideyebrows = /^\/kideyebrows/; botfreewin = /^\/freewin/; botjonesy = /^\/jonesy/; botjfon = /^\/jfon/; botjewcat = /^\/jewcat/; botbeast = /^\/beast/; botslideupinmydm = /^\/slideupinmydm/; botdonttagme = /^\/donttagme/; botthelist = /^\/thelist/; botpauly = /^\/pauly/; botdunk = /^\/dunk/; botmut = /^\/mut/; botpussy = /^\/pussy/; botmoran = /^\/moran/; botwindowpauly = /^\/windowpauly/; botdolan = /^\/dolan/; botrosado = /^\/rosado/; botjp = /^\/jp/; botenzo = /^\/enzo/;
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -172,6 +172,16 @@ function respond() {
          else if(request.text && botjewcat.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://img.memesuper.com/88f5b921685615102a22628a998b32c8_confused-bill-cosby-meme-memes-bruh_400-400.jpeg");
+    this.res.end();
+  }
+           else if(request.text && botjp.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/220x146.gif.233f30dd25b9449696ae24347f50b2f2");
+    this.res.end();
+  }
+             else if(request.text && botenzo.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://media.tenor.com/images/7b6ed306cc791e9acaa2fc7558766593/tenor.gif");
     this.res.end();
   }
       else if(request.text && botjfon.test(request.text)) {

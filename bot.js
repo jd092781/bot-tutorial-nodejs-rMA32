@@ -33,7 +33,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.mofleagues.com/rules.htm");
+    postMessage("https://docs.google.com/document/d/e/2PACX-1vSmHuuFiQ-RUUrWV_OOL3F7v4Zke2OsxPdNPgxVQypXdlHZGqdTJsQkld-NMWggKICfeyrHdhvOJr1x/pub");
     this.res.end();
   } 
     else if(request.text && botbettskid.test(request.text)) {

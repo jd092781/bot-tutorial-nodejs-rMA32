@@ -221,7 +221,7 @@ function respond() {
   }
          else if(request.text && botjonesy.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/500x500.gif.6ed6556afe0c4506b27589c4d3066953.large");
+    postMessage("https://pepperbough.com/wp-content/uploads/2013/08/bonds-on-steroids.jpg");
     this.res.end();
   }
            else if(request.text && botdonttagme.test(request.text)) {

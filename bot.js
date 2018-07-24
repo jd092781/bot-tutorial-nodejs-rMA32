@@ -86,7 +86,7 @@ function respond() {
   } 
       else if(request.text && bottags.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://mofleagues.com/pictures/list.PNG");
+    postMessage("https://docs.google.com/document/u/1/d/e/2PACX-1vQ8-0edj7x3qLuc4VeVbFG9QXIKGRi9ovNBeLZFt5xlGYgBS6HEXrNiF3IW32YE1-kRYgJ9R-gPMB6k/pub");
     this.res.end();
   }
           else if(request.text && botsawft.test(request.text)) {

@@ -226,7 +226,7 @@ function respond() {
   }
       else if(request.text && botjfon.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.whatthebuc.net/wp-content/uploads/2016/09/fans14.jpg");
+    postMessage("https://i.ytimg.com/vi/v0PDOHEtsLI/hqdefault.jpg");
     this.res.end();
   }
          else if(request.text && botjonesy.test(request.text)) {
